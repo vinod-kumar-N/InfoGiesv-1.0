@@ -121,7 +121,7 @@ a:hover{
 	top: 4em;
 	bottom: 3em;
 	left: 0;
-	z-index: 100;
+	z-index: 9999;
 	overflow: hidden;
 	-webkit-transform: translate3d(-150px, 0, 0);
 	transform: translate3d(-150px, 0, 0);
