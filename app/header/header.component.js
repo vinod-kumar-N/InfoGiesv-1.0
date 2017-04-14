@@ -34,10 +34,12 @@ myHeader.component('myHeader',{
 					if( this.isOpen ) {
 						classie.remove( self.el, 'menu--anim' );
 						setTimeout( function() { classie.remove( self.el, 'menu--open' );	}, 250 );
+						$('body').removeClass('moveMe');
 					}
 					else {
 						classie.add( self.el, 'menu--anim' );
 						setTimeout( function() { classie.add( self.el, 'menu--open' );	}, 250 );
+						$('body').addClass('moveMe');
 					}
 					this.pathEl.stop().animate( { 'path' : this.isOpen ? this.paths.close : this.paths.open }, 350, mina.easeout, function() {
 						self.pathEl.stop().animate( { 'path' : self.paths.reset }, 800, mina.elastic );

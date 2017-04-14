@@ -6,6 +6,18 @@
 	.carouselSection .item{
 		height: 200px;
 	}
+	.brandName{
+		    margin-top: 7px;
+				margin-left: 10px;
+	}
+	.navbar-brand{
+		height: auto;
+		overflow: hidden;
+	}
+	.navbar-brand img{
+		width:40px;
+		height: 40px;
+	}
 }
 /* Then comes Small Devices*/
 @media (min-width: 768px) {
@@ -16,6 +28,20 @@
 @media (min-width: 992px){
 	.carouselSection .item{
 		max-height: 600px;
+	}
+	.brandName{
+		    margin-top: 7px;
+				float: right;
+	}
+	.navbar-brand{
+		width: 126px;
+    height: 36px;
+    padding: 7px 0 0 15px;
+	}
+	.navbar-brand img{
+		width:36px;
+		height: 36px;
+		float: left;
 	}
 }
 
@@ -40,7 +66,7 @@ body{
   overflow: hidden;
 }
 .bgCmColor{
-  background: #34495e;
+  background: #373737;
 }
 .bgBlk{
   background: #000;
@@ -73,7 +99,7 @@ img{
   }
 /*Font sizes Ends*/
 .in-Blk{
-  display: inline-block;
+  display: inline-block !important;
 }
 /*margin Starts*/
 .margin0{
@@ -127,12 +153,24 @@ img{
   border:0;
 }
 /*Mobile menu Starts*/
+body.moveMe header, body.moveMe .mainContainer{
+	-webkit-transform: translate3d(134px, 0, 0);
+	transform: translate3d(134px, 0, 0);
+	-webkit-transition: -webkit-transform 0.6s;
+	transition: transform 0.6s;
+}
+body header, body .mainContainer{
+	-webkit-transform: translate3d(0px, 0, 0);
+	transform: translate3d(0px, 0, 0);
+	-webkit-transition: -webkit-transform 0.6s;
+	transition: transform 0.6s;
+}
 .menu {
 	position: fixed;
 	width: 125px;
-	top: 3.5em;
+	top: 1.5em;
 	bottom: 3em;
-	left: 0;
+	left: -7px;
 	z-index: 9999;
 	overflow: hidden;
 	-webkit-transform: translate3d(-150px, 0, 0);
@@ -233,7 +271,7 @@ img{
 .menu__handle::before,
 .menu__handle::after,
 .menu__handle span {
-	background: #5f656f;
+	background: #C0B283;
 }
 
 .menu__handle::before,
@@ -313,15 +351,9 @@ img{
 	.menu.menu--open + .main {
 		opacity: 0.05;
 	}
+	.menu__inner *{
+		color: #373737 !important;
+		;
+	}
 }
 /*Mobile menu Ends*/
-
-.logo, .navbar-brand{
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d5cea6+0,c9c190+97,b7ad70+100 */
-color: #d5cea6; /* Old browsers */
-color: -moz-linear-gradient(top,  #d5cea6 0%, #c9c190 97%, #b7ad70 100%); /* FF3.6-15 */
-color: -webkit-linear-gradient(top,  #d5cea6 0%,#c9c190 97%,#b7ad70 100%); /* Chrome10-25,Safari5.1-6 */
-color: linear-gradient(to bottom,  #d5cea6 0%,#c9c190 97%,#b7ad70 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d5cea6', endColorstr='#b7ad70',GradientType=0 ); /* IE6-9 */
-
-}
