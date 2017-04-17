@@ -1,1 +1,1 @@
-angular.module('infoGies', ['myHeader','myCar','ngRoute']);
+var infoGies = angular.module('infoGies', ['myHeader','myCar','ngRoute']);
