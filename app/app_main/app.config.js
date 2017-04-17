@@ -3,6 +3,12 @@ infoGies.config(['$locationProvider','$routeProvider',function($locationProvider
     .when("/",{
         templateUrl : "app/views/home.html",
     })
+    .when("/aboutUs",{
+        templateUrl : "app/views/aboutUs.html",
+    })
+    .when("/contactUs",{
+        templateUrl : "app/views/contactUs.html",
+    })
     .otherwise({
         templateUrl : "app/views/home.html",
     })

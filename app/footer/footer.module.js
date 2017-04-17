@@ -1,0 +1,1 @@
+var myFooter = angular.module("myFooter",[]);

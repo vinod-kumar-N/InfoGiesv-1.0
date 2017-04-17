@@ -21,6 +21,9 @@
 	.WhatweDo section{
 		margin-bottom: 10px;
 	}
+	.footerContainer{
+		padding-left: 0;
+	}
 }
 /* Then comes Small Devices*/
 @media (min-width: 768px) {
@@ -32,8 +35,8 @@
 	/*Fonts Starts*/
 	
 	section.WhatweDo section {
-    float: none;
     display: inline-block;
+		float: none;
 }
 	/*Fonts Ends*/
 	.carouselSection .item{
@@ -53,6 +56,19 @@
 		height: 36px;
 		float: left;
 	}
+	.WhatweDo{
+		margin-bottom: 15px;
+	}
+	.addressSection{
+		text-align: right;
+	}
+	.navbar-nav, .navbar-nav>li{
+		float: none;
+		text-align: center;
+	}
+	.navbar-nav>li{
+		display: inline-block;
+	}
 }
 
 /*Then Comes Large Devices*/
@@ -70,6 +86,8 @@ body{
   background: #ecf0f1;
   color: #C0B283;
   font-family: Roboto;
+	position: relative;
+	padding-bottom: 15rem;
 }
 .heightAuto{
   height:auto;
@@ -123,6 +141,9 @@ img{
 .in-Blk{
   display: inline-block !important;
 }
+.Blk{
+  display: block !important;
+}
 /*margin Starts*/
 .margin0{
   margin: 0;
@@ -135,6 +156,12 @@ img{
 /*Padding Starts*/
 .padd0{
 	padding: 0;
+}
+.paddL0{
+	padding-left: 0;
+}
+.paddR0{
+	padding-right: 0;
 }
 .paddTB5{
   padding: 5px 0;
@@ -184,13 +211,13 @@ img{
   border:0;
 }
 /*Mobile menu Starts*/
-body.moveMe header, body.moveMe .mainContainer{
+body.moveMe header, body.moveMe .mainContainer,body.moveMe .footerContainer {
 	-webkit-transform: translate3d(134px, 0, 0);
 	transform: translate3d(134px, 0, 0);
 	-webkit-transition: -webkit-transform 0.6s;
 	transition: transform 0.6s;
 }
-body header, body .mainContainer{
+body header, body .mainContainer, body .footerContainer{
 	-webkit-transform: translate3d(0px, 0, 0);
 	transform: translate3d(0px, 0, 0);
 	-webkit-transition: -webkit-transform 0.6s;
@@ -366,6 +393,12 @@ body header, body .mainContainer{
 	stroke: #34495e;
 	stroke-width: 12px;
 }
+.footerContainer{
+	position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
 
 @media screen and (max-width: 63em) {
 	.main {
@@ -388,3 +421,122 @@ body header, body .mainContainer{
 	}
 }
 /*Mobile menu Ends*/
+
+/*Contact Us page Starts*/
+.ch-grid {
+	margin: 20px 0 0 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+.ch-grid:after,
+.ch-item:before {
+	content: '';
+    display: table;
+}
+
+.ch-grid:after {
+	clear: both;
+}
+
+.ch-grid li {
+	width: 220px;
+	height: 220px;
+	display: inline-block;
+	margin: 20px;
+}
+
+
+.ch-item {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	overflow: hidden;
+	position: relative;
+	cursor: default;
+	box-shadow:
+		inset 0 0 0 16px rgba(255,255,255,0.6),
+		0 1px 2px rgba(0,0,0,0.1);
+	transition: all 0.4s ease-in-out;
+}
+.ch-img-1 {
+	background: url(../../lib/pics/Person-Image.png) no-repeat -14px 18px;
+	background-size: 241px;
+}
+
+.ch-img-2 {
+	background: url(../../lib/pics/Person-Image.png) no-repeat -14px 18px;
+	background-size: 241px;
+}
+
+.ch-img-3 {
+	background: url(../../lib/pics/Person-Image.png) no-repeat -14px 18px;
+	background-size: 241px;
+}
+.ch-info {
+	position: absolute;
+	background: #373737;
+	width: inherit;
+	height: inherit;
+	border-radius: 50%;
+	overflow: hidden;
+	opacity: 0;
+	transition: all 0.4s ease-in-out;
+	transform: scale(0);
+}
+.ch-info h3 {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 22px;
+	margin: 0 30px;
+	padding: 45px 0 0 0;
+	height: 140px;
+	font-family: 'Open Sans', Arial, sans-serif;
+	text-shadow:
+		0 0 1px #fff,
+		0 1px 2px rgba(0,0,0,0.3);
+}
+.ch-info p {
+	color: #fff;
+	padding: 10px 5px;
+	font-style: italic;
+	margin: 0 30px;
+	font-size: 12px;
+	border-top: 1px solid rgba(255,255,255,0.5);
+	opacity: 0;
+	transition: all 1s ease-in-out 0.4s;
+}
+.ch-info p a {
+	display: block;
+	color: rgba(255,255,255,0.7);
+	font-style: normal;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 9px;
+	letter-spacing: 1px;
+	padding-top: 4px;
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.ch-info p a:hover {
+	color: rgba(255,242,34, 0.8);
+}
+.ch-item:hover {
+	box-shadow:
+		inset 0 0 0 1px rgba(255,255,255,0.1),
+		0 1px 2px rgba(0,0,0,0.1);
+}
+
+.ch-item:hover .ch-info {
+	transform: scale(1);
+	opacity: 1;
+}
+
+.ch-item:hover .ch-info p {
+	opacity: 1;
+}
+/*Contact Us page Starts*/
