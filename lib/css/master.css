@@ -24,12 +24,6 @@
 	.footerContainer{
 		padding-left: 0;
 	}
-	.socialMedia a {
-    width: 30px;
-}
-.socialMedia a.twitter{
-    width: 35px;
-}
 	.commonBorder h1:before, .commonBorder h1:after {
     width: 50px;
 }
@@ -38,6 +32,17 @@
 }
 .addressSection{
 	margin-bottom: 15px;
+}
+.socialMedia a{
+		width: 30px;
+		height: 30px;
+		
+}
+.socialMedia.second a i{
+    font-size: 20px;
+}
+.socialMedia.second a i::before{
+    vertical-align: sub;
 }
 }
 /* Then comes Small Devices*/
@@ -51,15 +56,22 @@
 	.commonBorder h1:before, .commonBorder h1:after {
     width: 150px;
 }
-	.socialMedia a {
-    width: 20px;
-}
-.socialMedia a.twitter{
-    width: 25px;
-}
 .mailBox{
 	line-height: 25px;
 }
+.socialMedia a{
+		width: 20px;
+		height: 20px;
+		
+}
+.socialMedia:not(.second){
+	padding-top: 4px;
+}
+.socialMedia.second a{
+    width: 40px;
+    height: 40px;
+}
+
 }
 
 /* Then comes Medium Devices*/
@@ -98,11 +110,11 @@
 	.navbar-nav>li{
 		display: inline-block;
 	}
-	.socialMedia.second a{
-		width: 40px;
+	.socialMedia a{
+		transition: background-color 0.5s ease;
 	}
-	.socialMedia.second a.twitter{
-		width: 50px;
+	.socialMedia.second a{
+		font-size: 30px;
 	}
 }
 
@@ -592,4 +604,18 @@ img{
     background: #C0B283;
     height: 5px;
 		vertical-align: middle;
+}
+.socialMedia a{
+    background: #C0B283;
+    border-radius: 50%;
+    text-align: center;
+}
+.socialMedia a:hover{
+		background-color: #ecf0f1;
+	}
+	.socialMedia a i{
+	color: #373737 !important;
+}
+.socialMedia a:not(:last-child){
+	    margin-right: 3px;
 }
