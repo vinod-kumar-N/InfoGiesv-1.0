@@ -18,23 +18,35 @@
 		width:40px;
 		height: 40px;
 	}
-	.WhatweDo section{
-		margin-bottom: 10px;
-	}
 	.footerContainer{
 		padding-left: 0;
 	}
+	.socialMedia a {
+    width: 30px;
+}
+.socialMedia a.twitter{
+    width: 35px;
+}
+	.commonBorder h1:before, .commonBorder h1:after {
+    width: 50px;
+}
+.WhatweDo{
+	margin-bottom: 25px;
+}
 }
 /* Then comes Small Devices*/
 @media (min-width: 768px) {
-	.WhatweDo section{
-		margin-bottom: 10px;
-	}
+	.socialMedia a {
+    width: 20px;
+}
+.socialMedia a.twitter{
+    width: 25px;
+}
 }
 
 /* Then comes Medium Devices*/
 @media (min-width: 992px){
-	section.WhatweDo section {
+	section.WhatweDo section, section.VisionContainer section {
     display: inline-block;
 		float: none;
 }
@@ -68,6 +80,15 @@
 	.navbar-nav>li{
 		display: inline-block;
 	}
+	.socialMedia.second a{
+		width: 40px;
+	}
+	.socialMedia.second a.twitter{
+		width: 50px;
+	}
+	.commonBorder h1:before, .commonBorder h1:after {
+    width: 150px;
+}
 }
 
 /*Then Comes Large Devices*/
@@ -86,7 +107,7 @@ body{
   color: #C0B283;
   font-family: Roboto;
 	position: relative;
-	padding-bottom: 15rem;
+	padding-bottom: 19rem;
 }
 .heightAuto{
   height:auto;
@@ -146,6 +167,9 @@ img{
 /*margin Starts*/
 .margin0{
   margin: 0;
+}
+.marginB10{
+  margin-bottom: 10px;
 }
 .marginTB{
   margin-top: 0;
@@ -541,3 +565,13 @@ img{
 			height: auto;
 }
 /*Contact Us page Starts*/
+.commonBorder h1 span{
+	margin: 0 10px;
+}
+.commonBorder h1:before, .commonBorder h1:after {
+    display: inline-block;
+    content: '';
+    background: #C0B283;
+    height: 5px;
+		vertical-align: middle;
+}
