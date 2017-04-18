@@ -24,22 +24,16 @@
 	.footerContainer{
 		padding-left: 0;
 	}
-	body{
-	padding-bottom: 15rem;
-}
 }
 /* Then comes Small Devices*/
 @media (min-width: 768px) {
-	body{
-	padding-bottom: 15rem;
-}
+	.WhatweDo section{
+		margin-bottom: 10px;
+	}
 }
 
 /* Then comes Medium Devices*/
 @media (min-width: 992px){
-	body{
-		padding-bottom: 0rem;
-	}
 	section.WhatweDo section {
     display: inline-block;
 		float: none;
