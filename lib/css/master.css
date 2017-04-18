@@ -24,21 +24,26 @@
 	.footerContainer{
 		padding-left: 0;
 	}
+	body{
+	padding-bottom: 15rem;
+}
 }
 /* Then comes Small Devices*/
 @media (min-width: 768px) {
-
+	body{
+	padding-bottom: 15rem;
+}
 }
 
 /* Then comes Medium Devices*/
 @media (min-width: 992px){
-	/*Fonts Starts*/
-	
+	body{
+		padding-bottom: 0rem;
+	}
 	section.WhatweDo section {
     display: inline-block;
 		float: none;
 }
-	/*Fonts Ends*/
 	.carouselSection .item{
 		max-height: 600px;
 	}
@@ -87,7 +92,6 @@ body{
   color: #C0B283;
   font-family: Roboto;
 	position: relative;
-	padding-bottom: 15rem;
 }
 .heightAuto{
   height:auto;
@@ -222,6 +226,7 @@ body header, body .mainContainer, body .footerContainer{
 	transform: translate3d(0px, 0, 0);
 	-webkit-transition: -webkit-transform 0.6s;
 	transition: transform 0.6s;
+	position: static;
 }
 .menu {
 	position: fixed;
