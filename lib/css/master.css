@@ -86,6 +86,7 @@ body{
   color: #C0B283;
   font-family: Roboto;
 	position: relative;
+	padding-bottom: 15rem;
 }
 .heightAuto{
   height:auto;
@@ -209,19 +210,6 @@ img{
   border:0;
 }
 /*Mobile menu Starts*/
-body.moveMe header, body.moveMe .mainContainer,body.moveMe .footerContainer {
-	-webkit-transform: translate3d(134px, 0, 0);
-	transform: translate3d(134px, 0, 0);
-	-webkit-transition: -webkit-transform 0.6s;
-	transition: transform 0.6s;
-}
-body header, body .mainContainer, body .footerContainer{
-	-webkit-transform: translate3d(0px, 0, 0);
-	transform: translate3d(0px, 0, 0);
-	-webkit-transition: -webkit-transform 0.6s;
-	transition: transform 0.6s;
-	position: static;
-}
 .menu {
 	position: fixed;
 	width: 125px;
