@@ -421,7 +421,9 @@ body header, body .mainContainer, body .footerContainer{
 	}
 }
 /*Mobile menu Ends*/
-
+.menu__inner a{
+	text-decoration: none !important;
+}
 /*Contact Us page Starts*/
 .ch-grid {
 	margin: 20px 0 0 0;
@@ -430,7 +432,7 @@ body header, body .mainContainer, body .footerContainer{
 	display: block;
 	text-align: center;
 	width: 100%;
-	z-index: 100;
+	z-index: 99999;
 }
 
 .ch-grid:after,
