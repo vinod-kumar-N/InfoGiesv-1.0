@@ -451,8 +451,6 @@ body header, body .mainContainer, body .footerContainer{
 	display: inline-block;
 	margin: 20px;
 }
-
-
 .ch-item {
 	width: 100%;
 	height: 100%;
@@ -498,7 +496,6 @@ body header, body .mainContainer, body .footerContainer{
 	margin: 0 30px;
 	padding: 45px 0 0 0;
 	height: 140px;
-	font-family: 'Open Sans', Arial, sans-serif;
 	text-shadow:
 		0 0 1px #fff,
 		0 1px 2px rgba(0,0,0,0.3);
@@ -522,7 +519,6 @@ body header, body .mainContainer, body .footerContainer{
 	font-size: 9px;
 	letter-spacing: 1px;
 	padding-top: 4px;
-	font-family: 'Open Sans', Arial, sans-serif;
 }
 
 .ch-info p a:hover {
@@ -541,5 +537,20 @@ body header, body .mainContainer, body .footerContainer{
 
 .ch-item:hover .ch-info p {
 	opacity: 1;
+}
+.contactContainer.mobile .ch-item{
+	pointer-events: none;
+}
+.contactContainer.mobile .ch-info{
+	margin-top: 170px !important;
+	border-radius: 0 !important;
+}
+.contactContainer.mobile .ch-item .ch-info{
+	    transform: scale(1);
+    opacity: 1;
+}
+.contactContainer.mobile .ch-item .ch-info h3{
+	    padding: 10px 0 0 0;
+			height: auto;
 }
 /*Contact Us page Starts*/
