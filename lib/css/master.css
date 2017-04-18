@@ -57,6 +57,9 @@
 .socialMedia a.twitter{
     width: 25px;
 }
+.mailBox{
+	line-height: 25px;
+}
 }
 
 /* Then comes Medium Devices*/
