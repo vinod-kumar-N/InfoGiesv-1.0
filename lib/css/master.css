@@ -1,5 +1,8 @@
 
 @media (max-width: 767px) {
+	body{
+		padding-bottom: 22rem;
+	}
   .navbar-brand{
     font-size: 22px;
   }
@@ -30,12 +33,24 @@
 	.commonBorder h1:before, .commonBorder h1:after {
     width: 50px;
 }
-.WhatweDo{
+.WhatweDo, .MissionContainer{
 	margin-bottom: 25px;
+}
+.addressSection{
+	margin-bottom: 15px;
 }
 }
 /* Then comes Small Devices*/
 @media (min-width: 768px) {
+	body{
+		padding-bottom: 15rem;
+	}
+	.MissionContainer{
+	margin-bottom: 25px;
+}
+	.commonBorder h1:before, .commonBorder h1:after {
+    width: 150px;
+}
 	.socialMedia a {
     width: 20px;
 }
@@ -46,7 +61,7 @@
 
 /* Then comes Medium Devices*/
 @media (min-width: 992px){
-	section.WhatweDo section, section.VisionContainer section {
+	section.WhatweDo section, section.VisionContainer section, .MissionContainer section {
     display: inline-block;
 		float: none;
 }
@@ -86,9 +101,6 @@
 	.socialMedia.second a.twitter{
 		width: 50px;
 	}
-	.commonBorder h1:before, .commonBorder h1:after {
-    width: 150px;
-}
 }
 
 /*Then Comes Large Devices*/
@@ -107,7 +119,10 @@ body{
   color: #C0B283;
   font-family: Roboto;
 	position: relative;
-	padding-bottom: 19rem;
+}
+.clearAll{
+	float: none;
+	clear: both;
 }
 .heightAuto{
   height:auto;
