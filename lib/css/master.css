@@ -610,12 +610,28 @@ img{
     border-radius: 50%;
     text-align: center;
 }
+.socialMedia a.faceBook{
+	background: #3A579B;
+}
+.socialMedia a.twitter{
+	background: #33BDFD;
+}
+.socialMedia a.linkedIn {
+	background: #007FB2;
+	
+}
+.socialMedia:not(.second) a i:before{
+	vertical-align: middle;
+}
+.socialMedia a i{
+color: #fff !important;
+}
 .socialMedia a:hover{
 		background-color: #ecf0f1;
 	}
-	.socialMedia a i{
-	color: #373737 !important;
-}
+	.socialMedia a:hover i{
+		color: #373737 !important;
+	}
 .socialMedia a:not(:last-child){
 	    margin-right: 3px;
 }
