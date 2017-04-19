@@ -48,10 +48,6 @@
 #map{
 	height: 300px;
 }
-.place-cardContainer{
-	bottom: 26px;
-	left:0;
-}
 }
 /* Then comes Small Devices*/
 @media (min-width: 768px) {
