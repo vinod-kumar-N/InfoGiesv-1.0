@@ -226,6 +226,9 @@ img{
 .FclrBlk{
 	color: #373737 !important;
 }
+a:hover i{
+	color: #ecf0f1 !important;
+}
 /*Ripple Css Starts*/
 .ripple {
   position: relative;
@@ -252,6 +255,9 @@ img{
   transform: scale(0, 0);
   opacity: .2;
   transition: 0s;
+}
+.brandName{
+	    vertical-align: text-bottom;
 }
 /*Ripple Css Ends*/
 .borderRad0{
