@@ -18,9 +18,10 @@
 		overflow: hidden;
 	}
 	.navbar-brand img{
-		width:40px;
-		height: 40px;
+		width:30px;
+		height: 30px;
 	}
+	
 	.footerContainer{
 		padding-left: 0;
 	}
@@ -47,11 +48,15 @@
 #map{
 	height: 300px;
 }
+.place-cardContainer{
+	bottom: 26px;
+	left:0;
+}
 }
 /* Then comes Small Devices*/
 @media (min-width: 768px) {
 	body{
-		padding-bottom: 15rem;
+		padding-bottom: 23rem;
 	}
 	.MissionContainer{
 	margin-bottom: 25px;
@@ -74,11 +79,53 @@
     width: 40px;
     height: 40px;
 }
+#map{
+	height: 450px;
+}
+.socialMedia.second i{
+		font-size: 25px;
+}
+.socialMedia.second i:before{
+	vertical-align: sub;
 
+}
+.navbar-brand{
+		height:auto;
+	}
+.navbar-brand img{
+	width: 50px;
+}
+.navbar-nav, .navbar-nav>li{
+	float:none;
+
+	text-align: center;
+}
+.navbar-nav>li{
+	display: inline-block;
+}
+.navbar-nav>li a{
+	    line-height: 62px;
+}
+.carouselSection .item{
+	max-height: 535px;
+}
 }
 
 /* Then comes Medium Devices*/
 @media (min-width: 992px){
+	body{
+		padding-bottom: 15rem;
+	}
+	.socialMedia.second i{
+		font-size: 30px;
+}
+.socialMedia.second i:before{
+	vertical-align: text-bottom;
+
+}
+.navbar-nav>li a {
+    line-height: inherit;
+}
 	section.WhatweDo section, section.VisionContainer section, .MissionContainer section {
     display: inline-block;
 		float: none;
@@ -121,6 +168,9 @@
 	}
 	#map{
 		height: 400px;
+	}
+	#bs-example-navbar-collapse-1{
+		    padding-bottom: 0;
 	}
 }
 
@@ -512,7 +562,7 @@ a:hover i{
 
 
 /*Contact Us page Starts*/
-	.contactMail:hover{
+	.contactMail:hover, .contactMail:hover i{
 		color: #373737 !important;
 	}
 /*Contact Us page Starts*/
@@ -1141,3 +1191,8 @@ html[dir="rtl"] .gm-style .rating-half-star {
   background-size: 70px 210px;
 }
 /*Adding Test*/
+.place-cardContainer{
+	position: absolute;
+	bottom: 26px;
+	left: 8px;	
+}
