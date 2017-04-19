@@ -509,6 +509,8 @@ a:hover i{
 .socialMedia a:not(:last-child){
 	    margin-right: 3px;
 }
+
+
 /*Contact Us page Starts*/
 	.contactMail:hover{
 		color: #373737 !important;
