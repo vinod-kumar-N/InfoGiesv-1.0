@@ -13,6 +13,8 @@ infoGies.controller('contactController', function(){
           map: map
         });
 
+
+
         google.maps.event.addListener(map, 'idle', function(e) {
     
                 // Prevents card from being added more than once (i.e. when page is resized and google maps re-renders)
