@@ -1,0 +1,22 @@
+<head><style type="text/css">.gm-style .gm-style-mtc label,.gm-style .gm-style-mtc div{font-weight:400}</style><link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"><style type="text/css">.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px}</style><style type="text/css">@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}</style>
+    <meta name="google-site-verification" content="xrs3GNQMoOx_wBaGX9Q45bm7Ei7S9PUPLgmOLCsZUWk">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta id="author" name="author" content="Razorthink">
+    <meta id="description" name="description" content="Razorthink, Inc. was established in 2011 as an advanced business solutions for large enterprises and technology companies. The company has over 150 people with its headquarters...">
+    <meta id="generator" name="generator" content="Razorthink">
+    <title>Razorthink</title>
+    <meta id="meta-description" name="description" content="Razorthink, Inc. was established in 2011 as an advanced business solutions for large enterprises and technology companies. The company has over 150 people with its headquarters...">
+    <meta id="og-url" property="og:url" content="http://www.razorthink.com/">
+    <meta id="og-type" property="og:type" content="website">
+    <meta id="og-title" property="og:title" content="Razorthink">
+    <meta id="og-description" property="og:description" content="Razorthink, Inc. was established in 2011 as an advanced business solutions for large enterprises and technology companies. The company has over 150 people with its headquarters...">
+    <meta id="og-image" property="og:image" content="http://www.razorthink.com/images/sharing-pic.png">
+    <meta id="twitter-image" name="twitter:image" content="http://www.razorthink.com/images/sharing-pic.png">
+    <link id="canonical" rel="canonical" href="http://www.razorthink.com/">
+    <meta id="twitter-description" name="twitter:description" content="Razorthink, Inc. was established in 2011 as an advanced business solutions for large enterprises and technology companies. The company has over 150 people with its headquarters...">
+    <meta id="twitter-title" name="twitter:title" content="Razorthink">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:domain" content="http://www.razorthink.com">
+   
