@@ -1,7 +1,8 @@
-infoGies.controller('contactController', function(){
+infoGies.controller('contactController', function($scope,commonCanvas){
     if($('body').hasClass('moveMe')){
         $('.menu__handle').trigger('click');
     }
+    $scope.can = commonCanvas.myFunc();
   (function initMap() {
         var uluru = {lat: 12.9083416, lng: 77.6323529};
         var map = new google.maps.Map(document.getElementById('map'), {

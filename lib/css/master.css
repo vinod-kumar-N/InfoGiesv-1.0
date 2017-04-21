@@ -168,6 +168,12 @@
 	#bs-example-navbar-collapse-1{
 		    padding-bottom: 0;
 	}
+  .commonCanvas{
+    height: 150px;
+  }
+  .commonHeight{
+    min-height: 750px;
+  }
 }
 
 /*Then Comes Large Devices*/
@@ -243,6 +249,20 @@ img{
 		font-size: 50px;
 	}
 /*Font sizes Ends*/
+/*positions Starts*/
+  .posRel{
+    position: relative;
+  }
+  .posAbs{
+    position: absolute;
+  }
+  .alignMid{
+    top: 30px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+/*positions Ends*/
 .in-Blk{
   display: inline-block !important;
 }
@@ -252,6 +272,9 @@ img{
 /*margin Starts*/
 .margin0{
   margin: 0;
+}
+.marginT15{
+  margin-top: 15px;
 }
 .marginB10{
   margin-bottom: 10px;
