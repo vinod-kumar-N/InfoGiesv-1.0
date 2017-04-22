@@ -52,7 +52,7 @@
 	height: 80px;
 }
 .commonCanvas.contact{
-	background-size: contain !important;
+	background-size: cover !important;
 }
 .commonCanvas .titleCard{
 	padding-left: 15px;
