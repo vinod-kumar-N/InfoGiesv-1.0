@@ -21,7 +21,7 @@
 		width:30px;
 		height: 30px;
 	}
-	
+
 	.footerContainer{
 		padding-left: 0;
 	}
@@ -37,7 +37,7 @@
 .socialMedia a{
 		width: 30px;
 		height: 30px;
-		
+
 }
 .socialMedia.second a i{
     font-size: 20px;
@@ -47,6 +47,12 @@
 }
 #map{
 	height: 300px;
+}
+.commonCanvas{
+	height: 80px;
+}
+.commonCanvas.contact{
+	background-size: contain !important;
 }
 }
 /* Then comes Small Devices*/
@@ -66,7 +72,7 @@
 .socialMedia a{
 		width: 20px;
 		height: 20px;
-		
+
 }
 .socialMedia:not(.second){
 	padding-top: 4px;
@@ -83,7 +89,9 @@
 }
 .socialMedia.second i:before{
 	vertical-align: sub;
-
+}
+.nav.navbar-nav{
+	margin-left: 30px;
 }
 .navbar-brand{
 		height:auto;
@@ -91,19 +99,23 @@
 .navbar-brand img{
 	width: 50px;
 }
-.navbar-nav, .navbar-nav>li{
-	float:none;
-
-	text-align: center;
-}
-.navbar-nav>li{
-	display: inline-block;
-}
-.navbar-nav>li a{
-	    line-height: 62px;
-}
 .carouselSection .item{
 	max-height: 535px;
+}
+.commonCanvas{
+	height: 150px;
+}
+.commonCanvas.contact{
+	background-size: cover !important;
+}
+.commonCanvas .titleCard{
+	margin-top: 50px;
+}
+.commonCanvas .titleCard{
+	padding-left: 15px;
+}
+.nav.navbar-nav{
+	margin-top: 25px;
 }
 }
 
@@ -117,17 +129,16 @@
 }
 .socialMedia.second i:before{
 	vertical-align: text-bottom;
-
 }
-.navbar-nav>li a {
-    line-height: inherit;
+.nav.navbar-nav{
+	margin-top: 0px;
 }
 	section.WhatweDo section, section.VisionContainer section, .MissionContainer section {
     display: inline-block;
 		float: none;
 }
 	.carouselSection .item{
-		max-height: 600px;
+		max-height: 450px;
 	}
 	.brandName{
 		    margin-top: 7px;
@@ -149,13 +160,7 @@
 	.addressSection{
 		text-align: right;
 	}
-	.navbar-nav, .navbar-nav>li{
-		float: none;
-		text-align: center;
-	}
-	.navbar-nav>li{
-		display: inline-block;
-	}
+
 	.socialMedia a{
 		transition: background-color 0.5s ease;
 	}
@@ -168,12 +173,16 @@
 	#bs-example-navbar-collapse-1{
 		    padding-bottom: 0;
 	}
-  .commonCanvas{
-    height: 150px;
-  }
+	.commonCanvas{
+		height: 150px;
+	}
   .commonHeight{
     min-height: 750px;
   }
+	.titleCard{
+		margin-top: 50px;
+		padding-left: 20px;
+	}
 }
 
 /*Then Comes Large Devices*/
@@ -228,6 +237,9 @@ img{
 .card2{
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
 }
+.card3 {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
 /*Cards Ends*/
 /*Font sizes Starts*/
   .font12{
@@ -255,12 +267,6 @@ img{
   }
   .posAbs{
     position: absolute;
-  }
-  .alignMid{
-    top: 30px;
-    left: 0;
-    right: 0;
-    bottom: 0;
   }
 /*positions Ends*/
 .in-Blk{
@@ -293,6 +299,10 @@ img{
 }
 .paddR0{
 	padding-right: 0;
+}
+.paddOTB5{
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 .paddTB5{
   padding: 5px 0;
@@ -338,6 +348,12 @@ a:hover i{
 	    vertical-align: text-bottom;
 }
 /*Ripple Css Ends*/
+.dropdown-menu>li>a{
+	color: #373737 !important;
+}
+.dropdown-menu.open>li>a .caret,  .navbar-default .navbar-nav>li>a:hover .caret{
+	color: #f4f4f4 !important;
+}
 .borderRad0{
   border-radius: 0;
 }
@@ -347,6 +363,7 @@ a:hover i{
 .navbar-default{
   border:0;
 }
+
 /*Mobile menu Starts*/
 .menu {
 	position: fixed;
@@ -1206,12 +1223,19 @@ html[dir="rtl"] .gm-style .rating-half-star {
 }
 
 .gm-style .icon {
-  background-image: url(https://maps.gstatic.com/mapfiles/embed/images/entity11.png);
+  background-image: url('../pics/entity11.png');
   background-size: 70px 210px;
 }
 /*Adding Test*/
 .place-cardContainer{
 	position: absolute;
 	bottom: 26px;
-	left: 8px;	
+	left: 8px;
+}
+.commonCanvas.about{
+	background: url('../pics/about.jpg') no-repeat;
+	background-size: cover;
+}
+.commonCanvas.contact{
+	background: url('../pics/contact.png') no-repeat;
 }

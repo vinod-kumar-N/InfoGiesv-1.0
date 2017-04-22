@@ -1,8 +1,5 @@
-infoGies.controller('aboutUsCtrl', function($scope,commonCanvas){
+infoGies.controller('aboutUsCtrl', function($scope){
     if($('body').hasClass('moveMe')){
         $('.menu__handle').trigger('click');
-    } else{
-        $scope.canv = commonCanvas.myFunc();
     }
-    
 })
