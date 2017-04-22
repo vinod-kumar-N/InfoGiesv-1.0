@@ -54,6 +54,9 @@
 .commonCanvas.contact{
 	background-size: contain !important;
 }
+.commonCanvas .titleCard{
+	padding-left: 15px;
+}
 }
 /* Then comes Small Devices*/
 @media (min-width: 768px) {
