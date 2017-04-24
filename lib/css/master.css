@@ -57,6 +57,14 @@
 .commonCanvas .titleCard{
 	padding-left: 15px;
 }
+ #wrapper, #slider .slide, #slider {
+	max-height: 300px;
+}
+#slider .slide-block{
+  width: 200px;
+  left: 40px;
+	bottom: 30px;
+}
 }
 /* Then comes Small Devices*/
 @media (min-width: 768px) {
@@ -119,6 +127,11 @@
 }
 .nav.navbar-nav{
 	margin-top: 25px;
+}
+#slider .slide-block{
+  width:350px;
+  left: 40px;
+	bottom: 30px;
 }
 }
 
@@ -186,6 +199,20 @@
 		margin-top: 50px;
 		padding-left: 20px;
 	}
+  #wrapper {
+	height: 100%;
+	width: 100%;
+	min-height: 650px;
+	min-width: 900px;
+}
+#slider .slide, #slider {
+  height: 500px;
+}
+#slider .slide-block{
+  width: 435px;
+  left: 40px;
+	bottom: 75px;
+}
 }
 
 /*Then Comes Large Devices*/
@@ -1242,19 +1269,17 @@ html[dir="rtl"] .gm-style .rating-half-star {
 .commonCanvas.contact{
 	background: url('../pics/contact.png') no-repeat;
 }
-#wrapper {
-	height: 100%;
-	width: 100%;
-	min-height: 650px;
-	min-width: 900px;
-	padding-top: 1px;
-}
 .caroufredsel_wrapper{
 	margin: 0 !important;
 }
+  #wrapper {
+	padding-top: 1px;
+}
+#slider .slide, #slider {
+  height: 500px;
+}
 #slider {
 	margin: 100px 0 0 0;
-	height: 500px;
 	overflow: hidden;
 	background: url(img/ajax-loader.gif) center center no-repeat;
 }
@@ -1262,7 +1287,6 @@ html[dir="rtl"] .gm-style .rating-half-star {
 #slider .slide {
 	position: relative;
 	display: none;
-	height: 500px;
 	float: left;
 	background-position: center right;
 	cursor: pointer;
@@ -1279,10 +1303,7 @@ html[dir="rtl"] .gm-style .rating-half-star {
 
 #slider .slide-block {
 	position: absolute;
-	left: 40px;
-	bottom: 75px;
 	display: inline-block;
-	width: 435px;
 	background-color: #fff;
 	background-color: rgba(255,255,255, 0.8);
 	padding: 20px;
