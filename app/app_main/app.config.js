@@ -9,8 +9,8 @@ infoGies.config(['$locationProvider','$routeProvider',function($locationProvider
     .when("/contactUs",{
         templateUrl : "app/views/contactUs.html",
     })
-    .when("/services",{
-        templateUrl: 'app/views/services.html',
+    .when("/software",{
+        templateUrl: 'app/views/software.html',
     })
     .otherwise({
         templateUrl : "app/views/home.html",
