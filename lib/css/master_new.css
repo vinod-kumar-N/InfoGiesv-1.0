@@ -65,12 +65,106 @@
   left: 40px;
 	bottom: 30px;
 }
-.design1, .design2{
-  height: 320px;
+.DesingD{
+  min-height: 250px;
+}
+.design1{
+    height: 100px;
+    width: 140px;
+}
+
+.design2{
+    height: 62px;
+    width: 173px;
+    top: 190px;
+    left:84px;
+}
+@-webkit-keyframes changekey {
+  
+ 0% {
+    top: 0px;
+    left: -30px;
+  }
+  50% {
+    top: 80px;
+    left: 42px;
+  }
+  100% {
+    top: 190px;
+    left: 84px;
+  }
+}
+.design3{
+    height: 34px;
+    width: 82px;
+    left: 245px;
+    top: 205px;
+}
+@-webkit-keyframes changemouse {
+  
+ 0% {
+    top: 205px;
+    left: 800px;
+  }
+  50% {
+    top: 205px;
+    left: 425px;
+  }
+  100% {
+    top: 205px;
+    left: 245px;
+  }
+}
+
+.design4{
+    height: 86px;
+    width: 134px;
+    left: 0;
+    top: 206px;
+}
+@-webkit-keyframes changeipad {
+  
+ 0% {
+    top: 0;
+    left: 0;
+  }
+  50% {
+    top: 103px;
+    left: 0;
+  }
+  100% {
+    top: 206px;
+    left: 0;
+  }
+}
+.design5{
+    height: 66px;
+    width: 108px;
+    left: 250px;
+    top: 237px;
+}
+@-webkit-keyframes changeiphone {
+  
+ 0% {
+    top: 237px;
+    left: 750px;
+  }
+  50% {
+    top: 237px;
+    left: 375px;
+  }
+  100% {
+    top: 237px;
+    left: 250px;
+  }
+}
+.SDLC{
+    width: 400px;
+    height: 290px;
     background-size: contain !important;
 }
-.DetailsSection{
-      margin-top: 5px;
+.DetailsSection  h1{
+    font-size: 30px;
 }
 }
 /* Then comes Small Devices*/
@@ -140,14 +234,6 @@
   left: 40px;
 	bottom: 30px;
 }
-.design1, .design2{
-  height: 400px;
-    background-size: contain !important;
-}
-.DetailsSection{
-      margin-top: 5px;
-}
-
 }
 
 /* Then comes Medium Devices*/
@@ -228,20 +314,114 @@
   left: 40px;
 	bottom: 75px;
 }
-.design1{
-  background: url('../pics/Iped.png') no-repeat;
-  height: 500px;
-    background-size: contain;
-}
-.DetailsSection{
-      margin-top: 135px;
-}
 .DesingD{
-  margin-top: 50px;
+  min-height: 500px;
 }
-.design1, .design2{
-  height: 500px;
-    background-size: contain !important;
+.design1{
+    height: 303px;
+    width: 420px;
+}
+.design2{
+    position: absolute;
+        left: 720px;
+    background: url(../pics/Keyboard-icon.png)no-repeat;
+    height: 200px;
+    width: 320px;
+    top: 398px;
+    background-size: cover;
+        background-position: 0;
+    -webkit-animation-name: changekey;
+  -webkit-animation-timing-function: fast, steps(1);
+   -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: fast;
+  -webkit-animation-direction: normal;
+}
+@-webkit-keyframes changekey {
+  
+ 0% {
+    top: 0px;
+    left: 0;
+  }
+  50% {
+    top: 199px;
+    left: 360px;
+  }
+  100% {
+    top: 398px;
+    left: 720px;
+  }
+}
+.design3{
+    left: 720px;
+    height: 114px;
+    width: 169px;
+    left: 1006px;
+    top: 420px;
+}
+@-webkit-keyframes changemouse {
+  
+ 0% {
+    top: 420px;
+    left: 2000px;
+  }
+  50% {
+    top: 420px;
+    left: 1500px;
+  }
+  100% {
+    top: 420px;
+    left: 1006px;
+  }
+}
+
+.design4{
+        left: 720px;
+    height: 160px;
+    width: 237px;
+    left: 395px;
+    top: 484px;
+}
+@-webkit-keyframes changeipad {
+  
+ 0% {
+    top: 354px;
+    left: 0;
+  }
+  50% {
+    top: 484px;
+    left: 197.5px;
+  }
+  100% {
+    top: 484px;
+    left: 395px;
+  }
+}
+.design5{
+        left: 720px;
+    height: 160px;
+    width: 237px;
+    left: 1200px;
+    top: 520px;
+}
+@-webkit-keyframes changeiphone {
+  
+ 0% {
+    top: 520px;
+    left: 2000px;
+  }
+  50% {
+    top: 520px;
+    left: 1500px;
+  }
+  100% {
+    top: 520px;
+    left: 1200px;
+  }
+}
+
+.SDLC{
+    width: 765px;
+    height: 600px;
 }
 }
 
@@ -250,6 +430,28 @@
   .marginL5{
     margin-left: 5px;
   }
+  .SDLC{
+    width:600px;
+    height: 600px;
+  }
+  .design2{
+    top: calc(100% /4);
+    left:calc(100% / 2.5);
+}
+ @-webkit-keyframes changekey {
+ 0% {
+    top: calc(100% /4);
+    left: 0;
+  }
+  50% {
+    top: calc(100% /4);
+    left: calc(100% / 2.7);
+  }
+  100% {
+    top: calc(100% /4);
+    left: calc(100% / 2.5);
+  }
+}
 }
 /*Common for all Devices*/
 @font-face {
@@ -341,6 +543,9 @@ img{
 }
 .marginT15{
   margin-top: 15px;
+}
+.marginT20{
+  margin-top: 20px;
 }
 .marginB10{
   margin-bottom: 10px;
@@ -1415,12 +1620,82 @@ nav {
 }
 
 .design1{
-  background: url('../pics/Iped.png') no-repeat;
-}
-
-.DesingD{
-  margin-top: 50px;
+  position: absolute;
+     background: url(../pics/Mac_monitor.png)no-repeat;
+    background-size: contain;
+    -webkit-animation-name: change;
+  -webkit-animation-timing-function: linear, steps(1);
+   -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: linear;
+  -webkit-animation-direction: normal;
 }
 .design2{
-  background: url('../pics/SW_lifecycle.png') no-repeat;
+    position: absolute;
+    background: url(../pics/Keyboard-icon.png)no-repeat;
+    background-size: cover;
+        background-position: 0;
+    -webkit-animation-name: changekey;
+  -webkit-animation-timing-function: linear, steps(1);
+   -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: linear;
+  -webkit-animation-direction: normal;
 }
+.design3{
+    position: absolute;
+    background: url(../pics/magic_mouse.png)no-repeat;
+    background-size: contain;
+        background-position: 0;
+    -webkit-animation-name: changemouse;
+  -webkit-animation-timing-function: linear, steps(1);
+   -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: linear;
+  -webkit-animation-direction: normal;
+}
+.design4{
+    position: absolute;
+    background: url(../pics/ipad.png)no-repeat;
+    background-size: cover;
+    background-position: 0;
+    -webkit-animation-name: changeipad;
+  -webkit-animation-timing-function: linear, steps(1);
+   -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: linear;
+  -webkit-animation-direction: normal;
+}
+.design5{
+    position: absolute;
+    background: url(../pics/iphone.png)no-repeat;
+    background-size: cover;
+    background-size: contain;
+        background-position: 0;
+    -webkit-animation-name: changeiphone;
+  -webkit-animation-timing-function: linear, steps(1);
+   -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: linear;
+  -webkit-animation-direction: normal;
+}
+.SDLC{
+  background: url('../pics/SW_lifecycle.png')no-repeat;
+    margin: 0 auto;
+}
+.design1{
+    left: calc(100% /2.5);
+    top: calc(50px * 2);
+}
+
+ @-webkit-keyframes change {
+  
+ 0% {
+    top: 0px;
+    left: calc(100% /2.5);
+  }
+  50% {
+    top: calc(50px);
+    left: calc(100% /2.5);
+  }
+  100% {
+    top: calc(50px * 2);
+    left: calc(100% /2.5);
+  }
+}
+
