@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Sitemap: http://www.infogies.com
+Sitemap: http://www.infogies.com/#/aboutUs
+Sitemap: http://www.infogies.com/#/contactUs
