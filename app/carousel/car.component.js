@@ -1,75 +1,128 @@
 myCar.component('myCar',{
     controller: function myCarCtrl(){
-      $('#slider').carouFredSel({
-        width: '100%',
-        align: false,
-        items: 3,
-        items: {
-          width: $('#wrapper').width() * 0.15,
-          height: 500,
-          visible: 1,
-          minimum: 1
-        },
-        scroll: {
-          items: 1,
-          timeoutDuration : 5000,
-          onBefore: function(data) {
+      $(document).ready(function() {
+  
+  var $slider = $(".slider"),
+      $slideBGs = $(".slide__bg"),
+      diff = 0,
+      curSlide = 0,
+      numOfSlides = $(".slide").length-1,
+      animating = false,
+      animTime = 500,
+      autoSlideTimeout,
+      autoSlideDelay = 6000,
+      $pagination = $(".slider-pagi");
+  
+  function createBullets() {
+    for (var i = 0; i < numOfSlides+1; i++) {
+      var $li = $("<li class='slider-pagi__elem'></li>");
+      $li.addClass("slider-pagi__elem-"+i).data("page", i);
+      if (!i) $li.addClass("active");
+      $pagination.append($li);
+    }
+  };
+  
+  createBullets();
+  
+  function manageControls() {
+    $(".slider-control").removeClass("inactive");
+    if (!curSlide) $(".slider-control.left").addClass("inactive");
+    if (curSlide === numOfSlides) $(".slider-control.right").addClass("inactive");
+  };
+  
+  function autoSlide() {
+    autoSlideTimeout = setTimeout(function() {
+      curSlide++;
+      if (curSlide > numOfSlides) curSlide = 0;
+      changeSlides();
+    }, autoSlideDelay);
+  };
+  
+  autoSlide();
+  
+  function changeSlides(instant) {
+    if (!instant) {
+      animating = true;
+      manageControls();
+      $slider.addClass("animating");
+      $slider.css("top");
+      $(".slide").removeClass("active");
+      $(".slide-"+curSlide).addClass("active");
+      setTimeout(function() {
+        $slider.removeClass("animating");
+        animating = false;
+      }, animTime);
+    }
+    window.clearTimeout(autoSlideTimeout);
+    $(".slider-pagi__elem").removeClass("active");
+    $(".slider-pagi__elem-"+curSlide).addClass("active");
+    $slider.css("transform", "translate3d("+ -curSlide*100 +"%,0,0)");
+    $slideBGs.css("transform", "translate3d("+ curSlide*50 +"%,0,0)");
+    diff = 0;
+    autoSlide();
+  }
 
-            //	find current and next slide
-            var currentSlide = $('.slide.active', this),
-              nextSlide = data.items.visible,
-              _width = $('#wrapper').width();
+  function navigateLeft() {
+    if (animating) return;
+    if (curSlide > 0) curSlide--;
+    changeSlides();
+  }
 
-            //	resize currentslide to small version
-            currentSlide.stop().animate({
-              width: _width * 0.15
-            });
-            currentSlide.removeClass( 'active' );
+  function navigateRight() {
+    if (animating) return;
+    if (curSlide < numOfSlides) curSlide++;
+    changeSlides();
+  }
 
-            //	hide current block
-            data.items.old.add( data.items.visible ).find( '.slide-block' ).stop().fadeOut();
-
-            //	animate clicked slide to large size
-            nextSlide.addClass( 'active' );
-            nextSlide.stop().animate({
-              width: _width * 0.7
-            });
-          },
-          onAfter: function(data) {
-            //	show active slide block
-            data.items.visible.last().find( '.slide-block' ).stop().fadeIn();
-          }
-        },
-        onCreate: function(data){
-
-          //	clone images for better sliding and insert them dynamacly in slider
-          var newitems = $('.slide',this).clone( true ),
-            _width = $('#wrapper').width();
-
-          $(this).trigger( 'insertItem', [newitems, newitems.length, false] );
-
-          //	show images
-          $('.slide', this).fadeIn();
-          $('.slide:first-child', this).addClass( 'active' );
-          $('.slide', this).width( _width * 0.15 );
-
-          //	enlarge first slide
-          $('.slide:first-child', this).animate({
-            width: _width * 0.7
-          });
-
-          //	show first title block and hide the rest
-          $(this).find( '.slide-block' ).hide();
-          $(this).find( '.slide.active .slide-block' ).stop().fadeIn();
-        }
-      });
-
-      //	Handle click events
-      $('#slider').children().click(function() {
-        $('#slider').trigger( 'slideTo', [this] );
-      });
-
-
+  $(document).on("mousedown touchstart", ".slider", function(e) {
+    if (animating) return;
+    window.clearTimeout(autoSlideTimeout);
+    var startX = e.pageX || e.originalEvent.touches[0].pageX,
+        winW = $(window).width();
+    diff = 0;
+    
+    $(document).on("mousemove touchmove", function(e) {
+      var x = e.pageX || e.originalEvent.touches[0].pageX;
+      diff = (startX - x) / winW * 70;
+      if ((!curSlide && diff < 0) || (curSlide === numOfSlides && diff > 0)) diff /= 2;
+      $slider.css("transform", "translate3d("+ (-curSlide*100 - diff) +"%,0,0)");
+      $slideBGs.css("transform", "translate3d("+ (curSlide*50 + diff/2) +"%,0,0)");
+    });
+  });
+  
+  $(document).on("mouseup touchend", function(e) {
+    $(document).off("mousemove touchmove");
+    if (animating) return;
+    if (!diff) {
+      changeSlides(true);
+      return;
+    }
+    if (diff > -8 && diff < 8) {
+      changeSlides();
+      return;
+    }
+    if (diff <= -8) {
+      navigateLeft();
+    }
+    if (diff >= 8) {
+      navigateRight();
+    }
+  });
+  
+  $(document).on("click", ".slider-control", function() {
+    if ($(this).hasClass("left")) {
+      navigateLeft();
+    } else {
+      navigateRight();
+    }
+  });
+  
+  $(document).on("click", ".slider-pagi__elem", function() {
+    curSlide = $(this).data("page");
+    changeSlides();
+  });
+  
+});
     },
     templateUrl: 'app/carousel/car.html'
 })
