@@ -86,6 +86,7 @@
 .mapsContainer .container{
   padding: 0;
 }
+
 }
 /* Then comes Small Devices*/
 @media (min-width: 768px) {
