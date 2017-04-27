@@ -86,7 +86,12 @@
 .mapsContainer .container{
   padding: 0;
 }
-
+.commonFontSizeS{
+	font-size: 50px;
+}
+.commonDiv.bpoBox{
+	border:0;
+}
 }
 /* Then comes Small Devices*/
 @media (min-width: 768px) {
@@ -177,6 +182,9 @@
 .commonFontSize{
       font-size: 125px;
 }
+.commonFontSizeS{
+	font-size: 70px;
+}
 .emailBox{
       min-height: 300px;
     padding: 150px 0;
@@ -187,6 +195,14 @@
 .cd-nav-trigger {
       bottom: 145px;
 }
+.bpoBox div{
+		float: none;
+		display: inline-block;
+}
+.bpoBox{
+	margin-bottom: 25px;
+}
+
 }
 
 /* Then comes Medium Devices*/
@@ -342,6 +358,13 @@
     -moz-animation: cd-bounce-in 0.3s linear;
     animation: cd-bounce-in 0.3s linear;
   }
+	.bpoBox{
+		margin-bottom: 30px;
+	}
+
+	.commonFontSizeS{
+		font-size: 100px;
+	}
 }
 /*Then Comes Large Devices*/
 @media (min-width: 1200px) {
@@ -2077,11 +2100,11 @@ a.slide__text-link:hover { text-decoration:none; color:#FFF !important;}
 }
 
 .demo-1:hover:before, .demo-1:focus:before{
-  -webkit-transition-delay: .1s; 
-  -moz-transition-delay: .1s; 
-  -ms-transition-delay: .1s; 
-  -o-transition-delay: .1s; 
-  transition-delay: .1s; 
+  -webkit-transition-delay: .1s;
+  -moz-transition-delay: .1s;
+  -ms-transition-delay: .1s;
+  -o-transition-delay: .1s;
+  transition-delay: .1s;
 
   border: #2C3E50 solid 3px;
   bottom: -7px;
