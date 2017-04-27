@@ -48,6 +48,9 @@ myHeader.component('myHeader',{
 			}
 		} 
 	}
+	$('#cd-main-nav li a').on('click', function(){
+   $('.cd-nav-trigger').trigger('click');
+})
 });
   },
   templateUrl: 'app/header/header.html'
