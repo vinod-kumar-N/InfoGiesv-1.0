@@ -70,7 +70,7 @@
   font-size: 16px;
 }
 .cd-nav-trigger {
-      bottom: 50px;
+      bottom: 30px;
 }
 .addressSection,.socialMedia,.ctc {
   text-align: center
@@ -91,6 +91,12 @@
 }
 .commonDiv.bpoBox{
 	border:0;
+}
+.link--yaku span.I, .link--yaku span.G{
+      font-size: 38px;
+}
+header{
+  padding-top: 2em;
 }
 }
 /* Then comes Small Devices*/
@@ -202,7 +208,12 @@
 .bpoBox{
 	margin-bottom: 25px;
 }
-
+header{
+  padding-top: 3em; 
+}
+.link--yaku span.I, .link--yaku span.G{
+      font-size: 40px;
+}
 }
 
 /* Then comes Medium Devices*/
@@ -1370,7 +1381,6 @@ header {
   background: #fff;
   text-align: center;
   margin-bottom: 1em;
-  padding-top: 3em;
 }
 @media only screen and (min-width: 1170px) {
 
@@ -1972,16 +1982,7 @@ svg {
           transform: translateY(-50%);
   opacity: 0;
 }
-
-
-
-
 a.slide__text-link:hover { text-decoration:none; color:#FFF !important;}
-
-
-
-
-
 @media (max-width: 991px) {
   .slide__text {
     left: 0;
@@ -2117,5 +2118,79 @@ a.slide__text-link:hover { text-decoration:none; color:#FFF !important;}
   background-size: cover;
 }
 .mapsContainer a:hover{
+  color: #19B5FE !important;
+}
+.link--yaku {
+	color: #D3D3D3;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 30px;
+	overflow: hidden;
+	padding: 0 0 10px;
+}
+
+.link--yaku::before {
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	-webkit-transform: translate3d(-101%,0,0);
+	transform: translate3d(-101%,0,0);
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+}
+
+.link--yaku:hover::before {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.link--yaku span {
+  font-size: 30px;
+	display: inline-block;
+	position: relative;
+	-webkit-transform: perspective(1000px) rotate3d(0,1,0,0deg);
+	transform: perspective(1000px) rotate3d(0,1,0,0deg);
+	-webkit-transition: -webkit-transform 0.5s, color 0.5s;
+	transition: transform 0.5s, color 0.5s;
+}
+
+.link--yaku:hover span {
+	color: #1e1a1b !important;
+	-webkit-transform: perspective(1000px) rotate3d(0,1,0,360deg);
+	transform: perspective(1000px) rotate3d(0,1,0,360deg);
+}
+
+.link--yaku span:nth-child(4),
+.link--yaku:hover span:first-child {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+.link--yaku span:nth-child(3),
+.link--yaku:hover span:nth-child(2) {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+.link--yaku span:nth-child(2),
+.link--yaku:hover span:nth-child(3) {
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+
+.link--yaku span:first-child,
+.link--yaku:hover span:nth-child(4) {
+	-webkit-transition-delay: 0.3s;
+	transition-delay: 0.3s;
+}
+.link--yaku:visited { 
+    color: none !important;
+}
+.link--yaku span.I, .link--yaku span.G{
+  color: #2C3E50 !important;
+}
+.link--yaku:hover span.I, .link--yaku:hover span.G{
   color: #19B5FE !important;
 }
