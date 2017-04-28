@@ -1,6 +1,6 @@
 infoGies.config(['$locationProvider','$routeProvider',function($locationProvider,$routeProvider) {
     $routeProvider
-    .when("/",{
+    .when("/home",{
         templateUrl : "app/views/home.html",
     })
     .when("/aboutUs",{
@@ -18,4 +18,5 @@ infoGies.config(['$locationProvider','$routeProvider',function($locationProvider
     .otherwise({
         templateUrl : "app/views/home.html",
     })
+	$locationProvider.html5Mode(true).hashPrefix('*');
 }])
