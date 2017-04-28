@@ -98,6 +98,11 @@
 header{
   padding-top: 2em;
 }
+.commonDiv .commonFont{
+      margin-top: 20px;
+    margin-bottom: 0;
+    padding: 0;
+}
 }
 /* Then comes Small Devices*/
 @media (min-width: 768px) {
