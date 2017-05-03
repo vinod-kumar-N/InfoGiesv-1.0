@@ -46,11 +46,12 @@ myHeader.component('myHeader',{
 				navigationContainer.removeClass('is-fixed');
 				mainNavigation.removeClass('has-transitions');
 			}
-		} 
+		}
 	}
 	$('#cd-main-nav li a').on('click', function(){
    $('.cd-nav-trigger').trigger('click');
 })
+
 });
   },
   templateUrl: 'app/header/header.html'
