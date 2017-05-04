@@ -1383,7 +1383,7 @@ nav {
 header {
   position: relative;
   height: 100px;
-  background: #fff;
+  background: transparent;
   text-align: center;
   margin-bottom: 1em;
 }
@@ -2198,4 +2198,7 @@ a.slide__text-link:hover { text-decoration:none; color:#FFF !important;}
 }
 .link--yaku:hover span.I, .link--yaku:hover span.G{
   color: #19B5FE !important;
+}
+canvas {
+    position: absolute;
 }

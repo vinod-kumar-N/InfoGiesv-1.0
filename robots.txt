@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
-Sitemap: http://www.infogies.com
-Sitemap: http://www.infogies.com/#/aboutUs
-Sitemap: http://www.infogies.com/#/contactUs
+Sitemap: http://www.cygnisys.com/#/home
+Sitemap: http://www.cygnisys.com/#/services
+Sitemap: http://www.cygnisys.com/#/bpo
+Sitemap: http://www.cygnisys.com/#/contactUs
